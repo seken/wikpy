@@ -1,0 +1,3 @@
+include wikpy/config/deployment.ini_tmpl
+recursive-include wikpy/public *
+recursive-include wikpy/templates *
