@@ -1,0 +1,71 @@
+body { 
+   margin: 1.5em 2em 1.5em 1.5em; 
+   font-family: Georgia, sans-serif; 
+}
+
+h1, h2 { 
+   font-family: Tahoma, "Gill Sans", sans-serif; 
+   font-weight: normal; 
+}
+
+footer p { 
+   font-size: small; 
+   padding-top: 0.35em; 
+   border-top: 2px solid #066; 
+   font-style: normal; 
+}
+
+footer a.edit { 
+   font-variant: small-caps; 
+}
+
+nav { 
+   float: right; 
+   font-size: 0.95em;
+   font-variant: small-caps; 
+}
+
+a.nonexistent { 
+   color: #000; 
+}
+
+a.nonexistent:after { 
+   vertical-align: top; 
+   font-size: x-small; 
+   content: "?"; 
+   text-decoration: none; 
+}
+
+pre { margin-left: 1.5em; }
+
+blockquote { 
+   padding-left: 0.5em; 
+   border-left: 0.3em solid #99c; 
+}
+
+blockquote:after { 
+   font-size: small; 
+   content: "--" attr(cite); 
+}
+
+label {
+	font-weight:600;
+	vertical-align: top;
+}
+
+label:after {
+	content: ": ";
+}
+
+blockquote pre { 
+   font-family: Georgia, sans-serif; 
+}
+
+input.searchbox {
+   float:right;
+}
+
+#editor {
+	width:80%;
+	height:500px;
+}

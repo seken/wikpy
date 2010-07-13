@@ -19,8 +19,10 @@ def make_map(config):
     map.connect('/error/{action}/{id}', controller='error')
 
     # CUSTOM ROUTES HERE
-
-    map.connect('/{controller}/{action}')
-    map.connect('/{controller}/{action}/{id}')
-
+    map.connect('/', controller='page', action='show', page='index')
+    map.connect('/special/{action}', controller='action')
+    map.connect('/edit/{page}', controller='page', action='edit')
+    map.connect('/save/{page}', controller='page', action='save')
+    map.connect('/{page}', controller='page', action='show')
+ 
     return map
