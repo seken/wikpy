@@ -22,3 +22,12 @@ class Page(Base):
 		
 	def __repr__(self):
 		return "<Page('%s')" % self.name
+		
+	def fullname(self):
+		if self.namespace.name != 'None':
+			if self.name == '::' or len(self.name) == 0:
+				return '%s::' % self.namespace.name
+			else:
+				return '%s::%s' % (self.namespace.name, self.name)
+		else:
+			return '%s' % self.name

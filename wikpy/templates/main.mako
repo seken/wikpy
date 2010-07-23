@@ -12,7 +12,6 @@
 	<body>
 		<nav>
 			(<a href="/">home</a> |
-			<a href="/about">about</a> |
 			<a href="/special/about">about wiki</a> |
 			<a href="/special/${self.title()}/stats">stats</a>
 			% if c.links != None:
@@ -30,7 +29,7 @@
 			${self.content()}
 		</article>
 		<footer>
-			<p>Mark Goodall &lt;markit AT seken co uk&gt;. This is a <a href="http://seken.co.uk/wikpy::about/">wikpy</a> site.</p>
+			<p>Mark Goodall &lt;markit AT seken co uk&gt;. This is a <a href="http://seken.co.uk/Wikpy::">wikpy</a> site.</p>
 		</footer>
 		
 		<script type="text/javascript">
