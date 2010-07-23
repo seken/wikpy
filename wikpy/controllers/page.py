@@ -32,10 +32,10 @@ class EmptyPage:
 		
 	def fullname(self):
 		if self.namespace != 'None':
-			return '%s::%s' % (self.namespace, self.name)
-		elif self.name == '::' or len(self.name) == 0:
-			print self.namespace
-			return '%s::' % self.namespace
+			if self.name == '::' or len(self.name) == 0:
+				return '%s::' % self.namespace
+			else:
+				return '%s::%s' % (self.namespace, self.name)
 		else:
 			return '%s' % self.name
 
