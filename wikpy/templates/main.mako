@@ -29,7 +29,7 @@
 			${self.content()}
 		</article>
 		<footer>
-			<p>Mark Goodall &lt;markit AT seken co uk&gt;. This is a <a href="http://seken.co.uk/Wikpy::">wikpy</a> site.</p>
+			<p>This is a <a href="http://seken.co.uk/Wikpy::">wikpy</a> site.</p>
 		</footer>
 		
 		<script type="text/javascript">
