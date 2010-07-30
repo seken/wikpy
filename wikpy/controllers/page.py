@@ -61,11 +61,9 @@ class PageController(BaseController):
 		return render('edit.mako')
 		
 	def save(self, page):
-		print page
 		namespace, key = create_cache_key(self.show, {'page':page,})
 		cache.get_cache(namespace).remove(key)
 		np = self._splitName(page)
-		print page
 		newPage = self._fetchPageRaw(page)
 		if newPage == None:
 			name = np[1]
